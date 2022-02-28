@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#box-shadow {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 6px 14px 6px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #363636, 0px 6px 14px 6px rgba(0,0,0,0);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+    margin-top: 30px;
+    background-color: #F8F8F8;
+}
+@media (max-width: 600px) {
+    .header-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+    .nav-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .button {
+        padding: 3px 30px 3px 30px;
+    }
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    width: 100%;
+}
+
+.button {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    padding: 3px 12px 3px 12px;
+    border: 3px solid transparent;
+    border-radius: 16px;
+    color: #9E9E9E;
+}
+
+.button:hover {
+    border: 3px solid #9E9E9E;
+}
+
+/*------------------------------------------------------------*/
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 800px;
+    background-color: #F8F8F8;
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .main-container .text {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+
+    .main-img img{
+        width: 100%;
+    }
+}
+
+.main-text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 90px;
+    font-family: Consolas;
+    color: #9E9E9E;
+}
+
+p {
+    margin: 0;
+    font-size: 23px;
+    color: #9E9E9E;
+    font-family: Consolas;
+}
+
+.main-img {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}
+
+.main-img img{
+    width: 100%;
+}
